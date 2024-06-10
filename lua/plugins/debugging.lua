@@ -4,7 +4,7 @@ return {
 		"rcarriga/nvim-dap-ui",
 		"nvim-neotest/nvim-nio",
 		"leoluz/nvim-dap-go",
-        "mfussenegger/nvim-dap-python"
+		"mfussenegger/nvim-dap-python",
 	},
 	config = function()
 		local dap = require("dap")
@@ -12,7 +12,7 @@ return {
 
 		dapui.setup()
 		require("dap-go").setup()
-        require("dap-python").setup("python")
+		require("dap-python").setup("python")
 
 		dap.listeners.before.attach.dapui_config = function()
 			dapui.open()
@@ -27,14 +27,14 @@ return {
 			dapui.close()
 		end
 
-		vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, {})
-		vim.keymap.set("n", "<leader>db", dap.set_breakpoint, {})
-		vim.keymap.set("n", "<F5>", dap.continue, {})
-		vim.keymap.set("n", "<F7>", dap.step_into, {})
-		vim.keymap.set("n", "<F8>", dap.step_over, {})
-		vim.keymap.set("n", "<F9>", dap.step_out, {})
-		vim.keymap.set("n", "<F2>", dap.terminate, {})
-		vim.keymap.set("n", "S-<F5>", dap.restart, {})
+		vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, { desc = "Toggle breakpoint" })
+		vim.keymap.set("n", "<leader>db", dap.set_breakpoint, { desc = "Set breakpoint" })
+		vim.keymap.set("n", "<F5>", dap.continue, { desc = "Continue" })
+		vim.keymap.set("n", "<F7>", dap.step_into, { desc = "Step into" })
+		vim.keymap.set("n", "<F8>", dap.step_over, { desc = "Step over" })
+		vim.keymap.set("n", "<F9>", dap.step_out, { desc = "Step out" })
+		vim.keymap.set("n", "<F2>", dap.terminate, { desc = "Terminate" })
+		vim.keymap.set("n", "S-<F5>", dap.restart, { desc = "Restart" })
 
 		vim.keymap.set({ "n", "v" }, "<Leader>dh", function()
 			require("dap.ui.widgets").hover()
