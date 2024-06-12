@@ -1,0 +1,3 @@
+return {
+	"arcticicestudio/nord-vim",
+}

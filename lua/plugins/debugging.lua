@@ -38,17 +38,17 @@ return {
 
 		vim.keymap.set({ "n", "v" }, "<Leader>dh", function()
 			require("dap.ui.widgets").hover()
-		end)
+		end, { desc = "Evaluate" })
 		vim.keymap.set({ "n", "v" }, "<Leader>dp", function()
 			require("dap.ui.widgets").preview()
-		end)
+		end, { desc = "Preview" })
 		vim.keymap.set("n", "<Leader>df", function()
 			local widgets = require("dap.ui.widgets")
 			widgets.centered_float(widgets.frames)
-		end)
+		end, { desc = "Frames" })
 		vim.keymap.set("n", "<Leader>ds", function()
 			local widgets = require("dap.ui.widgets")
 			widgets.centered_float(widgets.scopes)
-		end)
+		end, { desc = "Scopes" })
 	end,
 }
