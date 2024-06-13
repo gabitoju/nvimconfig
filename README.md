@@ -69,5 +69,5 @@ Or, maybe, just because 🙂.
 I would like to thanks all the people that and the communities that have built all this awesome tools, from Neovim to each of the plugins and themes used in this project. And to all those creators that have invest hours in creating amazing tutorials on how to use Neovim and how to personalize it. You all rock.
 
 <div align="center">
-    From Uruguay 🇺 with ❤️ 
+    From Uruguay 🇺🇾 with ❤️ 
 </div>
