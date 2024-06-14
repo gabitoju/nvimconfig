@@ -14,6 +14,5 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 require("lazy").setup("plugins")
 
---vim.cmd[[colorscheme tokyonight]]
-local theme = require('last-color').recall() or 'tokyonight'
+local theme = require('last-color').recall() or 'nord'
 vim.cmd(('colorscheme %s'):format(theme))
