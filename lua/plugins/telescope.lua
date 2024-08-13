@@ -6,5 +6,6 @@ return {
 		local builtin = require("telescope.builtin")
 		vim.keymap.set("n", "<C-p>", builtin.find_files, { desc = "Find files" })
 		vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Find in files" })
+		vim.keymap.set("n", "<leader>gr", builtin.lsp_references, { desc = "References" })
 	end,
 }
