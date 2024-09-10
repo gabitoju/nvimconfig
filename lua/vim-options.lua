@@ -13,7 +13,13 @@ vim.api.nvim_set_keymap("n", "<S-Tab>", ":bprev<CR>", { noremap = true, silent =
 vim.api.nvim_set_keymap("n", "<A-j>", ":m .+1<CR>==", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-k>", ":m .-2<CR>==", { noremap = true, silent = true })
 
-vim.wo.number = true
+--vim.wo.number = true
+--vim.opt.relativenumber = true
+
+vim.opt.nu = true
+vim.opt.relativenumber = true
+vim.o.statuscolumn = "%s %l %r "
+
 vim.opt.cursorline = true
 
 vim.opt.termguicolors = true
