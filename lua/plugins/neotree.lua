@@ -11,6 +11,8 @@ return {
             filesystem = {
                 filtered_items = {
                     hide_dotfiles = false,
+                    hide_gitignore = false,
+                    visible = true,
                 },
                 follow_current_file = {
                     enabled = true,
