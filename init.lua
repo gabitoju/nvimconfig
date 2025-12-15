@@ -28,3 +28,4 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.opt_local.formatoptions:append("t")
     end,
 })
+vim.g.python3_host_prog = vim.fn.expand("~/.venvs/nvim/bin/python")
